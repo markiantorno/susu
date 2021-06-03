@@ -4,7 +4,7 @@ susu is a lightweight tool that that maps data from spreadsheets to Kotlin class
 ### Basic Use
 Annotate the fields in your Kotlin class with the `@CellInfo` annotation, specifying the column to map data from.
 
-##### Example
+#### Example
 Let's say you have a spreadsheet that looks like this:
 
 | id | name | age | lives in Toronto |
@@ -43,7 +43,7 @@ Person(id=3, name=Mike, age=35, inToronto=false)
 Person(id=4, name=Alex, age=27, inToronto=true)
 ```
 
-### Custom Mappings
+#### Custom Mappings
 There might be times where we need a custom parcer for data in our spreadsheet.
 
 Let's take the example from above, but add `body fat` as a possible field.
