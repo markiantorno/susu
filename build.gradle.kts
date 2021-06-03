@@ -3,7 +3,7 @@ plugins {
     kotlin("jvm") version "1.4.30-M1"
 }
 
-group = "com.iantorno"
+group = "ca.miantorno"
 version = "1.0.0-SNAPSHOT"
 
 repositories {
@@ -13,18 +13,18 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     // Apache POI - Java API To Access Microsoft Format Files
-    implementation ("org.apache.poi:poi-ooxml:5.0.0")
+    implementation ("org.apache.poi:poi-ooxml:${property("poi-ooxml")}")
     // Kotlin Reflect
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.10")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:${property("kotlin-reflect")}")
     // The Simple Logging Facade for Java (SLF4J)
-    implementation ("org.slf4j:slf4j-api:1.7.30")
+    implementation ("org.slf4j:slf4j-api:${property("slf4j")}")
     // logback classic
-    implementation ("ch.qos.logback:logback-classic:1.2.3")
+    implementation ("ch.qos.logback:logback-classic:${property("logback-classic")}")
     // logback core
-    implementation ("ch.qos.logback:logback-core:1.2.3")
+    implementation ("ch.qos.logback:logback-core:${property("logback-core")}")
 
-    testImplementation(platform("org.junit:junit-bom:5.7.2"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation(platform("org.junit:junit-bom:${property("junit-bom")}"))
+    testImplementation("org.junit.jupiter:junit-jupiter:${property("junit-jupiter")}")
 }
 
 tasks.test {
