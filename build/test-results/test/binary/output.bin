@@ -1,8 +1,0 @@
-0Person(id=1, name=Mark, age=37, inToronto=true)
-0Person(id=2, name=Matt, age=35, inToronto=true)
-1Person(id=3, name=Mike, age=35, inToronto=false)
-0Person(id=4, name=Alex, age=27, inToronto=true)
-IPersonWithBodyFat(id=1, name=Mark, age=37, inToronto=true, bodyFat=28.8)
-IPersonWithBodyFat(id=2, name=Matt, age=35, inToronto=true, bodyFat=18.2)
-IPersonWithBodyFat(id=3, name=Mike, age=35, inToronto=false, bodyFat=8.0)
-HPersonWithBodyFat(id=4, name=Alex, age=27, inToronto=true, bodyFat=0.0)
