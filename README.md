@@ -1,5 +1,5 @@
 # susu
-Susu is a lightweight tool that that maps data from spreadsheets to Kotlin classes.
+susu is a lightweight tool that that maps data from spreadsheets to Kotlin classes.
 
 ### Basic Use
 Annotate the fields in your Kotlin class with the `@CellInfo` annotation, specifying the column to map data from.
@@ -28,6 +28,7 @@ data class Person(
     @CellInfo(index = 3) val inToronto: Boolean = true,
 )
 ```
+It's important to note that, for susu to work, there must be a zero argument constructor available for the class. In our example, we do this by providing default values for all the Data Class fields.
 
 Once annotated, the data can be parsed as follows:
 ```kotlin
