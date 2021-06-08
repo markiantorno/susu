@@ -1,6 +1,24 @@
 # susu
 susu is a lightweight tool that that maps data from spreadsheets to Kotlin classes.
 
+| Current SNAPSHOT | Latest Release |
+| :---: | :---: |
+| [![Release Artifacts][Badge-susuSonatypeSnapshot]][Link-susuSonatypeSnapshot] | [![Snapshot Artifact][Badge-susuSonatypeRelease]][Link-susuSonatypeRelease] |
+
+###### Maven
+```xml
+<dependency>
+    <groupId>ca.miantorno</groupId>
+    <artifactId>susu</artifactId>
+    <version>(latest version)</version>
+</dependency>
+```
+
+###### Gradle
+```groovy
+compile group: 'ca.miantorno', name: 'susu', version: '(latest version)'
+```
+
 ### Basic Use
 Annotate the fields in your Kotlin class with the `@CellInfo` annotation, specifying the column to map data from.
 
@@ -112,4 +130,10 @@ PersonWithBodyFat(id=4, name=Alex, age=27, inToronto=true, bodyFat=0.0)
 This project is maintained by [Mark Iantorno][Link-markGithub].
 
 [Link-markGithub]: https://github.com/markiantorno
+[Link-susuSonatypeSnapshot]: https://s01.oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=ca.miantorno&a=susu&v=LATEST "Sonatype Snapshot"
+[Link-susuSonatypeRelease]: https://s01.oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=ca.miantorno&a=susu&v=LATEST "Sonatype Release"
+
+[Badge-susuSonatypeRelease]: https://img.shields.io/nexus/r/https/s01.oss.sonatype.org/ca.miantorno/susu.svg "Sonatype Releases"
+[Badge-susuSonatypeSnapshot]: https://img.shields.io/nexus/s/https/s01.oss.sonatype.org/ca.miantorno/susu.svg "Sonatype Snapshots"
+
 
