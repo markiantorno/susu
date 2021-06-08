@@ -14,9 +14,14 @@ susu is a lightweight tool that that maps data from spreadsheets to Kotlin class
 </dependency>
 ```
 
-###### Gradle
+###### Gradle (groovy)
 ```groovy
 compile group: 'ca.miantorno', name: 'susu', version: '(latest version)'
+```
+
+###### Gradle (kotlin)
+```kotlin
+implementation("ca.miantorno", "susu", (latest version))
 ```
 
 ### Basic Use
