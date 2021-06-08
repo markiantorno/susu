@@ -21,7 +21,7 @@ compile group: 'ca.miantorno', name: 'susu', version: '(latest version)'
 
 ###### Gradle (kotlin)
 ```kotlin
-implementation("ca.miantorno", "susu", (latest version))
+implementation("ca.miantorno:susu:(latest version)")
 ```
 
 ### Basic Use
